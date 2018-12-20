@@ -1,0 +1,5 @@
+Circuit: * C:\Users\hewitta\Dropbox\KICAD_ROV_LIB\backplane\Draft1.asc
+
+Fatal Error:  Unknown parameter "wavefile"
+ in line:
+"b1 n001 0 wavefile="c:\users\hewitta\desktop\whale.wav" chan=0"
