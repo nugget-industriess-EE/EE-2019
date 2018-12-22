@@ -145,10 +145,6 @@ F 3 "" H 5950 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 2850 5950 2850
-Text HLabel 5150 2850 0    50   Input ~ 0
-Current_Sense
-Wire Wire Line
-	5150 2850 5300 2850
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5C1E6CB6
@@ -275,18 +271,16 @@ Wire Wire Line
 	3650 2750 3650 3000
 Wire Wire Line
 	3650 3000 3600 3000
-Wire Wire Line
-	3650 3000 3750 3000
 Connection ~ 3650 3000
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5C1EE6DE
-P 3750 3000
-F 0 "#PWR?" H 3750 2800 50  0001 C CNN
-F 1 "GNDPWR" H 3950 3000 50  0000 C CNN
-F 2 "" H 3750 2950 50  0001 C CNN
-F 3 "" H 3750 2950 50  0001 C CNN
-	1    3750 3000
+P 4100 3000
+F 0 "#PWR?" H 4100 2800 50  0001 C CNN
+F 1 "GNDPWR" H 4300 3000 50  0000 C CNN
+F 2 "" H 4100 2950 50  0001 C CNN
+F 3 "" H 4100 2950 50  0001 C CNN
+	1    4100 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -299,16 +293,6 @@ Wire Wire Line
 	2200 3600 2300 3600
 Text GLabel 5850 3550 0    50   Input ~ 0
 ext_pwm
-Entry Wire Line
-	4200 3100 4300 3200
-Entry Wire Line
-	4200 3200 4300 3300
-Wire Wire Line
-	3600 3100 4200 3100
-Wire Wire Line
-	3600 3200 4200 3200
-Text HLabel 2100 3500 3    50   Input ~ 0
-current_sense
 $Comp
 L Device:R_Small R?
 U 1 1 5C1F43C7
@@ -331,8 +315,6 @@ F 3 "~" H 1750 3300 50  0001 C CNN
 	1    1750 3300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2100 3500 2300 3500
 $Comp
 L Device:C_Small C?
 U 1 1 5C1F5828
@@ -518,6 +500,20 @@ Wire Wire Line
 	2150 2250 2200 2250
 Wire Wire Line
 	1700 2250 1750 2250
-Wire Bus Line
-	4300 2350 4300 3650
+Wire Wire Line
+	1950 3500 1950 2850
+Wire Wire Line
+	1950 2850 5300 2850
+Wire Wire Line
+	1950 3500 2300 3500
+Text HLabel 3650 3200 2    50   Input ~ 0
+SCL_iso
+Text HLabel 3650 3100 2    50   Input ~ 0
+SDA_iso
+Wire Wire Line
+	3650 3100 3600 3100
+Wire Wire Line
+	3600 3200 3650 3200
+Wire Wire Line
+	3650 3000 4100 3000
 $EndSCHEMATC

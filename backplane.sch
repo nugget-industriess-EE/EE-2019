@@ -98,47 +98,6 @@ Wire Wire Line
 	5700 2050 5900 2050
 Wire Wire Line
 	5700 2150 5900 2150
-Entry Wire Line
-	5600 3700 5700 3800
-Entry Wire Line
-	5600 3600 5700 3700
-Wire Wire Line
-	6150 3700 5700 3700
-Wire Wire Line
-	6150 3800 5700 3800
-Text Label 5850 3700 0    50   ~ 0
-SCL_iso
-Text Label 5850 3800 0    50   ~ 0
-SDA_iso
-$Comp
-L Connector_Generic:Conn_01x24 J7
-U 1 1 5C14591A
-P 6350 4600
-F 0 "J7" H 6430 4592 50  0000 L CNN
-F 1 "PCA9685" H 6430 4501 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 6350 4600 50  0001 C CNN
-F 3 "https://www.adafruit.com/product/815" H 6350 4600 50  0001 C CNN
-	1    6350 4600
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6150 3600
-$Comp
-L power:GND #PWR0157
-U 1 1 5C145A9E
-P 6550 3500
-F 0 "#PWR0157" H 6550 3250 50  0001 C CNN
-F 1 "GND" H 6555 3327 50  0000 C CNN
-F 2 "" H 6550 3500 50  0001 C CNN
-F 3 "" H 6550 3500 50  0001 C CNN
-	1    6550 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 3500 6150 3350
-Wire Wire Line
-	6150 3350 6550 3350
-Wire Wire Line
-	6550 3350 6550 3500
 $Comp
 L power:PWR_FLAG #FLG0105
 U 1 1 5C15B216
@@ -307,36 +266,6 @@ Wire Wire Line
 	9150 900  9150 950 
 Wire Wire Line
 	10650 900  10650 950 
-Wire Wire Line
-	6750 3900 6750 3850
-$Comp
-L power:+5V #PWR0165
-U 1 1 5C162556
-P 6750 3850
-F 0 "#PWR0165" H 6750 3700 50  0001 C CNN
-F 1 "+5V" H 6765 4023 50  0000 C CNN
-F 2 "" H 6750 3850 50  0001 C CNN
-F 3 "" H 6750 3850 50  0001 C CNN
-	1    6750 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5P #PWR0166
-U 1 1 5C162597
-P 6900 3950
-F 0 "#PWR0166" H 6900 3800 50  0001 C CNN
-F 1 "+5P" H 6915 4123 50  0000 C CNN
-F 2 "" H 6900 3950 50  0001 C CNN
-F 3 "" H 6900 3950 50  0001 C CNN
-	1    6900 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 3900 6750 3900
-Wire Wire Line
-	6900 4000 6900 3950
-Wire Wire Line
-	6150 4000 6900 4000
 $Sheet
 S 3700 4350 1500 900 
 U 5C164307
@@ -353,96 +282,6 @@ Wire Wire Line
 	5500 2550 5200 2550
 Wire Wire Line
 	5200 2650 5500 2650
-$Comp
-L power:GND #PWR0167
-U 1 1 5C164228
-P 5750 5800
-F 0 "#PWR0167" H 5750 5550 50  0001 C CNN
-F 1 "GND" H 5755 5627 50  0000 C CNN
-F 2 "" H 5750 5800 50  0001 C CNN
-F 3 "" H 5750 5800 50  0001 C CNN
-	1    5750 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0168
-U 1 1 5C1657E3
-P 5850 4150
-F 0 "#PWR0168" H 5850 4000 50  0001 C CNN
-F 1 "+5V" H 5865 4323 50  0000 C CNN
-F 2 "" H 5850 4150 50  0001 C CNN
-F 3 "" H 5850 4150 50  0001 C CNN
-	1    5850 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 4200 5850 4150
-Wire Wire Line
-	5850 4200 6150 4200
-Wire Wire Line
-	5850 4500 5850 4200
-Wire Wire Line
-	5850 4500 6150 4500
-Connection ~ 5850 4200
-Wire Wire Line
-	5850 4800 5850 4500
-Wire Wire Line
-	5850 4800 6150 4800
-Connection ~ 5850 4500
-Wire Wire Line
-	5850 5100 5850 4800
-Wire Wire Line
-	5850 5100 6150 5100
-Connection ~ 5850 4800
-Wire Wire Line
-	5850 5400 5850 5100
-Wire Wire Line
-	5850 5400 6150 5400
-Connection ~ 5850 5100
-Wire Wire Line
-	5850 5700 5850 5400
-Wire Wire Line
-	5850 5700 6150 5700
-Connection ~ 5850 5400
-Wire Wire Line
-	5750 5800 6150 5800
-Wire Wire Line
-	5750 5800 5750 5500
-Wire Wire Line
-	5750 5500 6150 5500
-Connection ~ 5750 5800
-Wire Wire Line
-	5750 5500 5750 5200
-Wire Wire Line
-	5750 5200 6150 5200
-Connection ~ 5750 5500
-Wire Wire Line
-	5750 5200 5750 4900
-Wire Wire Line
-	5750 4900 6150 4900
-Connection ~ 5750 5200
-Wire Wire Line
-	5750 4900 5750 4600
-Wire Wire Line
-	5750 4600 6150 4600
-Connection ~ 5750 4900
-Wire Wire Line
-	5750 4600 5750 4300
-Wire Wire Line
-	5750 4300 6150 4300
-Connection ~ 5750 4600
-Text HLabel 6150 4100 0    50   Input ~ 0
-PWM0
-Text HLabel 6150 4400 0    50   Input ~ 0
-PWM1
-Text HLabel 6150 4700 0    50   Input ~ 0
-PWM2
-Text HLabel 6150 5000 0    50   Input ~ 0
-PWM3
-Text HLabel 6150 5300 0    50   Input ~ 0
-PWM4
-Text HLabel 6150 5600 0    50   Input ~ 0
-PWM5
 Entry Wire Line
 	5500 4450 5600 4550
 Entry Wire Line

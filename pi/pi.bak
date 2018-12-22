@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:backplane-cache
+LIBS:pi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ U 1 1 5BBFB23A
 P 5950 2550
 F 0 "U6" H 5950 3625 50  0000 C CNN
 F 1 "PI_ZERO" H 5950 3534 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 5700 3200 50  0001 C CNN
+F 2 "rov:PI_ZERO" H 5700 3200 50  0001 C CNN
 F 3 "" H 5700 3200 50  0001 C CNN
 	1    5950 2550
 	1    0    0    -1  
