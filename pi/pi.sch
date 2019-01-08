@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:backplane-cache
+LIBS:pi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -134,8 +134,6 @@ F 3 "" H 4000 2000 50  0001 C CNN
 	1    4000 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 1700 2    50   Input ~ 0
-5VPI
 $Comp
 L power:+5VP #PWR0144
 U 1 1 5BC0E78D
@@ -292,8 +290,6 @@ $EndComp
 Wire Wire Line
 	3850 1800 4400 1800
 Connection ~ 4400 1800
-Text GLabel 4750 1600 2    50   Input ~ 0
-5VPI
 Wire Wire Line
 	3850 1900 4400 1900
 Connection ~ 4400 1900
@@ -303,8 +299,6 @@ Wire Wire Line
 	4400 1800 5050 1800
 Wire Wire Line
 	4400 1600 4750 1600
-Text GLabel 4750 2100 2    50   Input ~ 0
-5VPI
 Wire Wire Line
 	4750 2100 4400 2100
 Wire Wire Line
@@ -495,4 +489,37 @@ NoConn ~ 6850 3200
 NoConn ~ 6850 3400
 NoConn ~ 6850 3500
 NoConn ~ 6850 3600
+$Comp
+L power:+5VP #PWR0105
+U 1 1 5C29B2D9
+P 4000 1700
+F 0 "#PWR0105" H 4000 1550 50  0001 C CNN
+F 1 "+5VP" H 4015 1873 50  0000 C CNN
+F 2 "" H 4000 1700 50  0001 C CNN
+F 3 "" H 4000 1700 50  0001 C CNN
+	1    4000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5C29B442
+P 4750 1600
+F 0 "#PWR?" H 4750 1450 50  0001 C CNN
+F 1 "+5VP" H 4765 1773 50  0000 C CNN
+F 2 "" H 4750 1600 50  0001 C CNN
+F 3 "" H 4750 1600 50  0001 C CNN
+	1    4750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5C29C44D
+P 4750 2100
+F 0 "#PWR?" H 4750 1950 50  0001 C CNN
+F 1 "+5VP" H 4765 2273 50  0000 C CNN
+F 2 "" H 4750 2100 50  0001 C CNN
+F 3 "" H 4750 2100 50  0001 C CNN
+	1    4750 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

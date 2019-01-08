@@ -134,8 +134,6 @@ F 3 "" H 4000 2000 50  0001 C CNN
 	1    4000 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 1700 2    50   Input ~ 0
-5VPI
 $Comp
 L power:+5VP #PWR0144
 U 1 1 5BC0E78D
@@ -495,4 +493,15 @@ NoConn ~ 6850 3200
 NoConn ~ 6850 3400
 NoConn ~ 6850 3500
 NoConn ~ 6850 3600
+$Comp
+L power:+5VP #PWR?
+U 1 1 5C29B2D9
+P 4000 1700
+F 0 "#PWR?" H 4000 1550 50  0001 C CNN
+F 1 "+5VP" H 4015 1873 50  0000 C CNN
+F 2 "" H 4000 1700 50  0001 C CNN
+F 3 "" H 4000 1700 50  0001 C CNN
+	1    4000 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
