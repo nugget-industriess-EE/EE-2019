@@ -495,7 +495,7 @@ SDA_iso
 Text HLabel 2000 3400 2    50   Input ~ 0
 SCL_iso
 $Comp
-L rov:609-3634-ND CN1
+L _saved_sensor_suite-rescue:609-3634-ND-rov CN1
 U 1 1 5C4199CC
 P 1750 5000
 F 0 "CN1" H 1925 5225 50  0000 C CNN
@@ -734,7 +734,7 @@ SDA_iso
 Text HLabel 10050 1900 0    50   Input ~ 0
 SCL_iso
 $Comp
-L rov:MAX6581 U1
+L _saved_sensor_suite-rescue:MAX6581-rov U1
 U 1 1 5C41DFDD
 P 3200 5150
 F 0 "U1" H 4750 4800 42  0000 L CNN
@@ -928,9 +928,9 @@ F 3 "" H 9650 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 5100 5650 4750
+	5700 5100 5700 4750
 Wire Wire Line
-	5500 4750 5650 4750
+	5500 4750 5700 4750
 Wire Wire Line
-	5550 5100 5650 5100
+	5550 5100 5700 5100
 $EndSCHEMATC

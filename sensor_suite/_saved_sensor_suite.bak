@@ -819,12 +819,6 @@ Wire Wire Line
 	5150 4850 5150 4750
 Wire Wire Line
 	5150 4750 5300 4750
-Wire Wire Line
-	5500 4750 5600 4750
-Wire Wire Line
-	5600 4750 5600 5100
-Wire Wire Line
-	5600 5100 5550 5100
 NoConn ~ 3950 5550
 $Comp
 L Device:C_Small C6
@@ -933,4 +927,10 @@ F 3 "" H 9650 1450 50  0001 C CNN
 	1    9650 1450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5650 5100 5650 4750
+Wire Wire Line
+	5500 4750 5650 4750
+Wire Wire Line
+	5550 5100 5650 5100
 $EndSCHEMATC
