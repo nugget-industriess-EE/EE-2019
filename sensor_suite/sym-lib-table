@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name _saved_sensor_suite-rescue)(type Legacy)(uri ${KIPRJMOD}/_saved_sensor_suite-rescue.lib)(options "")(descr ""))
+)
