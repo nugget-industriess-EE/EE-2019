@@ -208,17 +208,6 @@ Wire Notes Line
 Wire Notes Line
 	8750 1950 8750 5400
 $Comp
-L Connector_Generic:Conn_01x08 J5
-U 1 1 5C1E8E53
-P 6800 4000
-F 0 "J5" H 6879 3992 50  0000 L CNN
-F 1 "LSM303" H 6879 3901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6800 4000 50  0001 C CNN
-F 3 "~" H 6800 4000 50  0001 C CNN
-	1    6800 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5C1E8E54
 P 1450 1800
@@ -230,40 +219,6 @@ F 3 "~" H 1450 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 4200 6400 4200
-Wire Wire Line
-	6400 4200 6400 4250
-$Comp
-L power:+3.3V #PWR0105
-U 1 1 5C1E8E55
-P 7300 4250
-F 0 "#PWR0105" H 7300 4100 50  0001 C CNN
-F 1 "+3.3V" H 7315 4423 50  0000 C CNN
-F 2 "" H 7300 4250 50  0001 C CNN
-F 3 "" H 7300 4250 50  0001 C CNN
-	1    7300 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 4400 7300 4300
-Wire Wire Line
-	6600 4400 7300 4400
-Wire Wire Line
-	6600 4300 7300 4300
-Connection ~ 7300 4300
-Wire Wire Line
-	7300 4300 7300 4250
-Wire Wire Line
-	6600 3900 6400 3900
-Wire Wire Line
-	6600 4000 6400 4000
-Wire Wire Line
-	6600 4100 6400 4100
-Wire Wire Line
-	6600 3800 6400 3800
-Wire Wire Line
-	6600 3700 6400 3700
-Wire Wire Line
 	1250 1800 1200 1800
 Wire Wire Line
 	1250 1900 1200 1900
@@ -273,9 +228,6 @@ Wire Wire Line
 	3750 4950 3700 4950
 Wire Wire Line
 	3400 5250 3200 5250
-NoConn ~ 6400 3900
-NoConn ~ 6400 4000
-NoConn ~ 6400 4100
 $Comp
 L power:GNDS #PWR0107
 U 1 1 5C059FAF
@@ -844,10 +796,6 @@ Text GLabel 9700 1550 0    50   Input ~ 0
 SDA_iso
 Text GLabel 9700 1750 0    50   Input ~ 0
 SCL_iso
-Text GLabel 6400 3700 0    50   Input ~ 0
-SDA_iso
-Text GLabel 6400 3800 0    50   Input ~ 0
-SCL_iso
 Text GLabel 3700 4950 0    50   Input ~ 0
 SDA_iso
 Text GLabel 3700 5100 0    50   Input ~ 0
@@ -921,12 +869,12 @@ F 3 "" H 4050 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rov:Pi3+ U2
+L _saved_sensor_suite-rescue:Pi3+-rov U2
 U 1 1 5C47740E
 P 2950 3800
 F 0 "U2" H 3128 3846 50  0000 L CNN
 F 1 "Pi3+" H 3128 3755 50  0000 L CNN
-F 2 "ROV:Pi3+" H 2950 3800 50  0001 C CNN
+F 2 "rov:Pi3+" H 2950 3800 50  0001 C CNN
 F 3 "" H 2950 3800 50  0001 C CNN
 	1    2950 3800
 	1    0    0    -1  
@@ -1041,17 +989,6 @@ F 1 "GNDPWR" H 1204 1896 50  0000 C CNN
 F 2 "" H 1200 2000 50  0001 C CNN
 F 3 "" H 1200 2000 50  0001 C CNN
 	1    1200 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR0104
-U 1 1 5C6D8CD0
-P 6400 4250
-F 0 "#PWR0104" H 6400 4050 50  0001 C CNN
-F 1 "GNDPWR" H 6404 4096 50  0000 C CNN
-F 2 "" H 6400 4200 50  0001 C CNN
-F 3 "" H 6400 4200 50  0001 C CNN
-	1    6400 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1202,4 +1139,70 @@ Wire Wire Line
 NoConn ~ 2300 4850
 NoConn ~ 2300 5250
 NoConn ~ 2300 5750
+$Comp
+L Connector:Conn_01x04_Female J5
+U 1 1 5C7E2578
+P 7150 3750
+F 0 "J5" H 7177 3726 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 7177 3635 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7150 3750 50  0001 C CNN
+F 3 "~" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5C7EC20F
+P 6450 3800
+F 0 "C11" H 6250 3850 50  0000 L CNN
+F 1 "C_Small" H 6050 3750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6450 3800 50  0001 C CNN
+F 3 "~" H 6450 3800 50  0001 C CNN
+	1    6450 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 3850 0    50   Input ~ 0
+SDA_iso
+Text GLabel 6950 3950 0    50   Input ~ 0
+SCL_iso
+Wire Wire Line
+	6450 3600 6450 3650
+Connection ~ 6450 3650
+Wire Wire Line
+	6450 3650 6450 3700
+Wire Wire Line
+	6450 3900 6450 3950
+Wire Wire Line
+	6450 3650 6950 3650
+Wire Wire Line
+	6950 3750 6550 3750
+Wire Wire Line
+	6550 3750 6550 3950
+Wire Wire Line
+	6550 3950 6450 3950
+Connection ~ 6450 3950
+Wire Wire Line
+	6450 3950 6450 4000
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5C8203C7
+P 6450 4000
+F 0 "#PWR0104" H 6450 3850 50  0001 C CNN
+F 1 "+3.3V" H 6465 4173 50  0000 C CNN
+F 2 "" H 6450 4000 50  0001 C CNN
+F 3 "" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 5C8204EA
+P 6450 3600
+F 0 "#PWR0105" H 6450 3400 50  0001 C CNN
+F 1 "GNDPWR" H 6455 3445 50  0000 C CNN
+F 2 "" H 6450 3550 50  0001 C CNN
+F 3 "" H 6450 3550 50  0001 C CNN
+	1    6450 3600
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
