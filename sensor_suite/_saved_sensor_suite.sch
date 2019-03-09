@@ -97,8 +97,6 @@ Wire Wire Line
 	7850 4250 7850 4050
 Wire Wire Line
 	7850 4050 8350 4050
-Text Notes 8200 1850 0    42   ~ 0
-isolated gnd\n
 Text Label 4350 6200 1    42   ~ 0
 temp1n
 Text Label 4200 6200 1    42   ~ 0
@@ -203,10 +201,6 @@ Text Notes 500  850  0    42   ~ 0
 notes:\n\nisolated ground pour will be placed under this section\n\nuse twisted pair for external temp. sensing transistors\n
 Text Notes 3900 3800 0    50   ~ 0
 Temperature\n
-Wire Notes Line
-	3750 1900 8750 1900
-Wire Notes Line
-	8750 1950 8750 5400
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5C1E8E54
@@ -1029,12 +1023,12 @@ Wire Wire Line
 $Comp
 L power:+5VP #PWR0126
 U 1 1 5C73E075
-P 9950 1450
-F 0 "#PWR0126" H 9950 1300 50  0001 C CNN
-F 1 "+5VP" H 9965 1623 50  0000 C CNN
-F 2 "" H 9950 1450 50  0001 C CNN
-F 3 "" H 9950 1450 50  0001 C CNN
-	1    9950 1450
+P 9950 950
+F 0 "#PWR0126" H 9950 800 50  0001 C CNN
+F 1 "+5VP" H 9965 1123 50  0000 C CNN
+F 2 "" H 9950 950 50  0001 C CNN
+F 3 "" H 9950 950 50  0001 C CNN
+	1    9950 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1205,4 +1199,19 @@ F 3 "" H 6450 3550 50  0001 C CNN
 	1    6450 3600
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 5C80BCEF
+P 9950 1150
+F 0 "F1" H 10010 1196 50  0000 L CNN
+F 1 "Fuse" H 10010 1105 50  0000 L CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" V 9880 1150 50  0001 C CNN
+F 3 "~" H 9950 1150 50  0001 C CNN
+	1    9950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1000 9950 950 
+Wire Wire Line
+	9950 1300 9950 1450
 $EndSCHEMATC
